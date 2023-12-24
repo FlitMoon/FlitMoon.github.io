@@ -12,13 +12,13 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 remote_theme             : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "default" # "default" "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "dark" # "default" "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "en-US"
+locale                   : "ko-KR"
 title                    : "소월의 기록"
-title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
+title_separator          : "|"
+subtitle                 : "Just Alive" # site tagline that appears below site title in masthead
 name                     : "FlitMoon"
 description              : "소월의 공부 & 개발 기록용 블로그."
 url                      : "https://FlitMoon.github.io"
@@ -27,7 +27,10 @@ repository               : "FlitMoon/FlitMoon.github.io" # GitHub username/repo-
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : "/images/whatif-ep-1.png" # path of logo image to display in the masthead, e.g. 
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
-# breadcrumbs            : false # true, false (default)
+
+# 포스트 윗부분 Home에서 포스트까지의 경로
+breadcrumbs              : true # true, false (default) 
+
 words_per_minute         : 200
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
@@ -107,7 +110,7 @@ author:
   name             : "소월"
   avatar           : "/images/whatif-ep-1.png"
   bio              : "I want to be solo developer."
-  location         : "Korea-South"
+  location         : "South Korea"
   email            : "www.develop.flitmoon@gmail.com"
   links:
     - label: "Email"
@@ -296,3 +299,6 @@ defaults:
       comments: # true
       share: true
       related: true
+      show_date: true
+
+date_format: "%Y-%m-%d"
