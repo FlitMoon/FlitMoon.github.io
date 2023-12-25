@@ -243,7 +243,7 @@
         left: 0;
         bottom: 0;
         height: 4px;
-        background: $primary-color;
+        background: $custom-background-color;
         width: 100%;
         -webkit-transition: $global-transition;
         transition: $global-transition;
@@ -513,9 +513,9 @@
   box-shadow: $box-shadow;
 
   .nav__title {
-    color: #fff;
+    color: black;
     font-size: $type-size-6;
-    background: $primary-color;
+    background: $custom-background-color;
     border-top-left-radius: $border-radius;
     border-top-right-radius: $border-radius;
   }

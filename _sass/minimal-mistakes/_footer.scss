@@ -14,7 +14,7 @@
   animation: $intro-transition;
   -webkit-animation-delay: 0.45s;
   animation-delay: 0.45s;
-  background-color: $footer-background-color;
+  background-color: $custom-background-color;
 
   footer {
     @include clearfix;
@@ -30,7 +30,7 @@
   }
 
   a {
-    color: inherit;
+    color: $text-color;
     text-decoration: none;
 
     &:hover {

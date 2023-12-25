@@ -12,7 +12,7 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "dark" # "default" "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "contrast" # "default" "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "ko-KR"
@@ -238,6 +238,7 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+  - jekyll-redirect-from
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -246,6 +247,7 @@ whitelist:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+  - jekyll-redirect-from
 
 
 # Archives
@@ -296,10 +298,21 @@ defaults:
       author_profile: true
       read_time: true
 
+      # toc
+      toc: true
+      toc_sticky: true
+      toc_label: 목차
+      toc_icon: fas fa-utensils
+
       # disqus
       comments: true
       share: true
       related: true
       show_date: true
+
+      # sidebar-left
+      author_profile: false
+      sidebar:
+          nav: "docs"
 
 date_format: "%Y-%m-%d"
