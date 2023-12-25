@@ -29,13 +29,12 @@ logo                     : "/images/whatif-ep-1.png" # path of logo image to dis
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 
 # 포스트 윗부분 Home에서 포스트까지의 경로
-breadcrumbs              : true # true, false (default) 
-
+breadcrumbs              : true # true, false (default)
 words_per_minute         : 200
 comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
+  provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
   disqus:
-    shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+    shortname            : "flitmoon" # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
@@ -296,7 +295,9 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: # true
+
+      # disqus
+      comments: true
       share: true
       related: true
       show_date: true
