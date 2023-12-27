@@ -313,6 +313,6 @@ defaults:
       # sidebar-left
       author_profile: false
       sidebar:
-          nav: "docs"
+          nav: "counts"
 
 date_format: "%Y-%m-%d"
